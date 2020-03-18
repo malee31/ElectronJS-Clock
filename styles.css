@@ -41,8 +41,8 @@ body
 #second
 {
 	animation-duration: 60s;
-	height: min(45vw, 45vh);
-	top: calc(min(75vw, 75vh) / 2 - min(45vw, 45vh));
+	height: min(35vw, 35vh);
+	top: calc(min(75vw, 75vh) / 2 - min(35vw, 35vh));
 }
 
 .clockHands
