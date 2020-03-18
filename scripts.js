@@ -8,6 +8,6 @@ var min = now.getMinutes();
 var sec = now.getSeconds();
 
 
-hour.setAttribute("animation-delay", hr * -60);
-minute.setAttribute("animation-delay", min * -60);
-second.setAttribute("animation-delay", sec * -60);
+hour.style.animationDelay = "" + (hr * -60) + "s";
+minute.style.animationDelay = "" + (min * -360) + "s";
+second.style.animationDelay = "" + (sec * -21600) + "s";
