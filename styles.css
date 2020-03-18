@@ -1,4 +1,70 @@
+*
+{
+	padding: 0;
+	margin: 0;
+	transition-duration: .5s;
+}
+
 body
 {
-	background-color: blue;
+	background-color: grey;
+	width: 100vw;
+	height: 100vh;
+}
+
+#clock
+{
+	position: absolute;
+	top: calc(50vh - min(75vw, 75vh) / 2);
+	left: calc(50vw - min(75vw, 75vh) / 2);
+	width: min(75vw, 75vh);
+	height: min(75vw, 75vh);
+	border: min(2vw, 2vh) solid black; 
+	border-radius: 50%;
+	background-color: white;
+}
+
+#hour
+{
+	animation-duration: 86400s;
+	height: min(25vw, 25vh);
+	top: calc(min(75vw, 75vh) / 2 - min(25vw, 25vh));
+}
+
+#minute
+{
+	animation-duration: 3600s;
+	height: min(30vw, 30vh);
+	top: calc(min(75vw, 75vh) / 2 - min(30vw, 30vh));
+}
+
+#second
+{
+	animation-duration: 60s;
+	height: min(45vw, 45vh);
+	top: calc(min(75vw, 75vh) / 2 - min(45vw, 45vh));
+}
+
+.clockHands
+{
+	animation-name: clockHandSpin;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	background-color: black;
+	position: absolute;
+	left: calc(50% - 8px);
+	transform-origin: bottom center;
+	width: 8px;
+}
+
+@keyframes clockHandSpin
+{
+	from
+	{
+		transform: rotate(0deg);
+	}
+	to
+	{
+		transform: rotate(360deg);
+	}
 }
