@@ -26,7 +26,7 @@ body
 
 #hour
 {
-	animation-duration: 86400s;
+	animation-duration: 43200s;
 	height: min(25vw, 25vh);
 	top: calc(min(75vw, 75vh) / 2 - min(25vw, 25vh));
 }
