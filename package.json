@@ -11,7 +11,7 @@
   "keywords": [],
   "description": "A clock in ElectronJS.",
   "devDependencies": {
-    "electron": "^9.4.0"
+    "electron": "^18.3.7"
   },
   "dependencies": {
     "npm": "^6.14.6"
